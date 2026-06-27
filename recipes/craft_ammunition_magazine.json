@@ -1,0 +1,26 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "custom:craft_ammunition_magazine"
+        },
+        "tags": ["crafting_table"],
+        "pattern": [
+            "III",
+            "IBB",
+            "III"
+        ],
+        "key": {
+            "I": {
+                "item": "minecraft:iron_ingot"
+            },
+            "B": {
+                "item": "custom:bullet"
+            }
+        },
+        "result": {
+            "item": "custom:ammunition_magazine",
+            "count": 1
+        }
+    }
+}

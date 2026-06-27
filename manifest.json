@@ -1,18 +1,26 @@
 {
     "format_version": 2,
     "header": {
-        "description": "Мой первый аддон",
-        "name": "Super Addon",
+        "description": "Мод с автоматом и системой патронов",
+        "name": "Assault Rifle Mod",
         "uuid": "65db265e-77d4-4f05-8e2b-231a4781cf11",
         "version": [1, 0, 0],
         "min_engine_version": [1, 20, 0]
     },
     "modules": [
         {
-            "description": "Скрипты и параметры",
+            "description": "Данные аддона",
             "type": "data",
             "uuid": "4392f8d3-5296-4191-bb27-0cfd69ff46ff",
             "version": [1, 0, 0]
+        },
+        {
+            "description": "Скрипты и логика",
+            "type": "script",
+            "language": "javascript",
+            "uuid": "8f8d1e3c-1a2b-4c5d-9e7f-3a4b5c6d7e8f",
+            "version": [1, 0, 0],
+            "entry": "scripts/main.js"
         }
     ]
 }

@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Мой первый аддон",
+        "name": "Super Addon",
+        "uuid": "65db265e-77d4-4f05-8e2b-231a4781cf11",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 20, 0]
+    },
+    "modules": [
+        {
+            "description": "Скрипты и параметры",
+            "type": "data",
+            "uuid": "4392f8d3-5296-4191-bb27-0cfd69ff46ff",
+            "version": [1, 0, 0]
+        }
+    ]
+}

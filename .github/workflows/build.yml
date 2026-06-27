@@ -1,0 +1,26 @@
+name: Build MCPACK
+
+on:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Create MCPACK
+        run: zip -r MyAddon.mcpack . -x ".git/*" ".github/*" "README.md"
+
+      - name: Upload to Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ github.run_number }}
+          name: Release v${{ github.run_number }}
+          files: MyAddon.mcpack
+          
